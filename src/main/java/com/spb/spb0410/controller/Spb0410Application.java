@@ -1,4 +1,4 @@
-package com.spb.spb0410;
+package com.spb.spb0410.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

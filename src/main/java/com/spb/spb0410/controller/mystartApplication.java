@@ -1,4 +1,4 @@
-package com.spb.spb0410;
+package com.spb.spb0410.controller;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
