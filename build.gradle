@@ -22,21 +22,41 @@ repositories {
 }
 
 dependencies {
+	//jdbc
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	//jpa
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
+    //h2
 	runtimeOnly 'com.h2database:h2'
+
+
+	
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
+	//https://blog.csdn.net/sherlocklcy/article/details/109753519  security 要特別設定 不然全部都擋掉
+	//implementation 'org.springframework.boot:spring-boot-starter-security'
+
+	compileOnly 'org.projectlombok:lombok'
+
     implementation 'mysql:mysql-connector-java:8.0.25'
 	annotationProcessor 'org.projectlombok:lombok'
-	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
 	// for jsp
 	 implementation 'javax.servlet:jstl'
      implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	 providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
+	 //lombok
+	 compileOnly 'org.projectlombok:lombok:1.18.26'
+	 annotationProcessor 'org.projectlombok:lombok:1.18.26'
+  
+	 testCompileOnly 'org.projectlombok:lombok:1.18.26'
+	 testAnnotationProcessor 'org.projectlombok:lombok:1.18.26'
+  
+
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
