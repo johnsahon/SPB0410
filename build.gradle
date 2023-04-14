@@ -35,7 +35,7 @@ dependencies {
 	
 	implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
 	//https://blog.csdn.net/sherlocklcy/article/details/109753519  security 要特別設定 不然全部都擋掉
-	//implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
 
 	compileOnly 'org.projectlombok:lombok'
 
